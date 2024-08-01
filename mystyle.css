@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(180deg, rgb(1, 27, 47) 30%, rgb(0, 0, 0) 100%);;
+    height: 100vh;
+}
+
+.animation{
+    left: 2000px;
+    width: calc(2000px/10);
+    height:509px ;
+    background-image:url(doodle-sprite.png);
+    animation: drinking 1.5s steps(10, end) infinite;
+
+}
+
+
+@keyframes drinking {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2000px 0;
+    }
+  }
+  
